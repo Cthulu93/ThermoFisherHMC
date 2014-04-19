@@ -13,7 +13,7 @@ import os
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': os.environ['RDS_DB_NAME'],                      # Or path to database file if using sqlite3.
         'USER': os.environ['RDS_USERNAME'],                      # Not used with sqlite3.
         'PASSWORD': os.environ['RDS_PASSWORD'],                  # Not used with sqlite3.
