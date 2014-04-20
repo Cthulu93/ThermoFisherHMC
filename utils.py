@@ -1,6 +1,35 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+m boto.dynamodb2.fields import HashKey, RangeKey, KeysOnlyIndex, AllIndex
+from boto.dynamodb2.table import Table
+from boto.dynamodb2.types import NUMBER
+import decimal
+import time
+
+# creates plots from the last 10 minutes
+current_time = time.time()
+
+data = Table('raspi')
+result = data.query_2(station__eq='home',date__gte=current_time-600)
+
+
+temp_vector = []
+light_vector = []
+hum_vector = []
+time_vector = []
+
+for res in result:
+	temp_vector.append[res['temperature']]
+	light_vector.append[res['light']]
+	hum_vector.append[res['humidity']]
+
+time_vector = [i*(600/len(temp_vector)) for i in range(len(temp_vector))]	
+
+print time_vector
+
+plotTempHumLight(time_vector, temp_vector, hum_vector, light_vector)
+
 def calcHeatIndex(temp, hum):
     tempinF = float(C) * 9 / 5 + 32
     c1 = -42.379
