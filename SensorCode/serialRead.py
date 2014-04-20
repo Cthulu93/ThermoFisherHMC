@@ -1,11 +1,14 @@
 import time
 import serial
 import re
+import boto
+from boto.s3.key import Key
 import boto.dynamodb2
 from boto.dynamodb2.fields import HashKey, RangeKey, KeysOnlyIndex, AllIndex
 from boto.dynamodb2.table import Table
 from boto.dynamodb2.types import NUMBER
 import decimal
+import os
 
 
 
@@ -25,11 +28,34 @@ def writeToDB(table, temp, hum, light):
                 'humidity': decimal.Decimal(1)*decimal.Decimal(hum),
                 'light': decimal.Decimal(1)*decimal.Decimal(light)})
 
+def checkForTimelapse(bucket, prevFileList):
+        directory = '/tmp/motion/'
+        allFiles = sorted(os.listdir(directory),
+                          key=lambda p: os.path.getctime(os.path.join('/tmp/motion', p)))
+        # Check for new file
+        if ((not (prevFileList == allFiles)) and len(allFiles) > 1):
+                # Upload complete file
+                print "New file detected, uploading."
+                prevTimelapse = allFiles[-2]
+                k = Key(bucket)
+                k.key = prevTimelapse
+                k.set_contents_from_filename(directory + prevTimelapse)
+                return allFiles
+        return prevFileList
+                
+                
+                
+
 if __name__=="__main__":
     ser = serial.Serial('/dev/ttyUSB1', 9600)
     homeTable = createTableIfNotExists()
+    conn = boto.connect_s3()
+    bucket = conn.get_bucket('thermofisher-testvideos')
     startTime = time.time()
+    timelapseList = sorted(os.listdir('/tmp/motion'),
+                           key=lambda p: os.path.getctime(os.path.join('/tmp/motion', p)))
     while True:
+        timelapseList = checkForTimelapse(bucket, timelapseList)
         line = ser.readline()
         print line
         currentTime = time.time()
