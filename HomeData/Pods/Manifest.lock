@@ -1,0 +1,10 @@
+PODS:
+  - JBChartView (2.3.0)
+
+DEPENDENCIES:
+  - JBChartView
+
+SPEC CHECKSUMS:
+  JBChartView: 6eb2658e67e419940df91ab21a4369693ed89c30
+
+COCOAPODS: 0.32.1

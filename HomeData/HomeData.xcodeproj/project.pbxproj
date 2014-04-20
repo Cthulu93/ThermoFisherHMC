@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670DC06619044CF300264F78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC06519044CF300264F78 /* Foundation.framework */; };
+		670DC06819044CF300264F78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC06719044CF300264F78 /* CoreGraphics.framework */; };
+		670DC06A19044CF300264F78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC06919044CF300264F78 /* UIKit.framework */; };
+		670DC07019044CF300264F78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 670DC06E19044CF300264F78 /* InfoPlist.strings */; };
+		670DC07219044CF300264F78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670DC07119044CF300264F78 /* main.m */; };
+		670DC07619044CF300264F78 /* HDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 670DC07519044CF300264F78 /* HDAppDelegate.m */; };
+		670DC07819044CF300264F78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670DC07719044CF300264F78 /* Images.xcassets */; };
+		670DC07F19044CF400264F78 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC07E19044CF400264F78 /* XCTest.framework */; };
+		670DC08019044CF400264F78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC06519044CF300264F78 /* Foundation.framework */; };
+		670DC08119044CF400264F78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC06919044CF300264F78 /* UIKit.framework */; };
+		670DC08919044CF400264F78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 670DC08719044CF400264F78 /* InfoPlist.strings */; };
+		670DC08B19044CF400264F78 /* HomeDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 670DC08A19044CF400264F78 /* HomeDataTests.m */; };
+		670DC09719045EED00264F78 /* HDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670DC09519045EED00264F78 /* HDHomeViewController.m */; };
+		670DC09819045EED00264F78 /* HDHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670DC09619045EED00264F78 /* HDHomeViewController.xib */; };
+		670DC09B19045FB200264F78 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 670DC09A19045FB200264F78 /* Constants.m */; };
+		670DC0A9190465F800264F78 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC0A7190465F800264F78 /* AWSDynamoDB.framework */; };
+		670DC0AA190465F800264F78 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC0A8190465F800264F78 /* AWSRuntime.framework */; };
+		670DC0AC190465FE00264F78 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670DC0AB190465FE00264F78 /* AWSS3.framework */; };
+		670DC0AF1904662600264F78 /* HDDatabaseCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 670DC0AE1904662600264F78 /* HDDatabaseCaller.m */; };
+		D0B9DB8F5DFA48D8ABEC2840 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BBBA2795CD4D29919D9E4E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		670DC08219044CF400264F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 670DC05A19044CF300264F78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 670DC06119044CF300264F78;
+			remoteInfo = HomeData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25BBBA2795CD4D29919D9E4E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		559A5D582A554692A8AC998D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		670DC06219044CF300264F78 /* HomeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		670DC06519044CF300264F78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		670DC06719044CF300264F78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		670DC06919044CF300264F78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		670DC06D19044CF300264F78 /* HomeData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeData-Info.plist"; sourceTree = "<group>"; };
+		670DC06F19044CF300264F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		670DC07119044CF300264F78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		670DC07319044CF300264F78 /* HomeData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeData-Prefix.pch"; sourceTree = "<group>"; };
+		670DC07419044CF300264F78 /* HDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAppDelegate.h; sourceTree = "<group>"; };
+		670DC07519044CF300264F78 /* HDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAppDelegate.m; sourceTree = "<group>"; };
+		670DC07719044CF300264F78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		670DC07D19044CF400264F78 /* HomeDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		670DC07E19044CF400264F78 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		670DC08619044CF400264F78 /* HomeDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeDataTests-Info.plist"; sourceTree = "<group>"; };
+		670DC08819044CF400264F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		670DC08A19044CF400264F78 /* HomeDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDataTests.m; sourceTree = "<group>"; };
+		670DC09419045EED00264F78 /* HDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDHomeViewController.h; sourceTree = "<group>"; };
+		670DC09519045EED00264F78 /* HDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDHomeViewController.m; sourceTree = "<group>"; };
+		670DC09619045EED00264F78 /* HDHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDHomeViewController.xib; sourceTree = "<group>"; };
+		670DC09919045FB200264F78 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		670DC09A19045FB200264F78 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		670DC0A7190465F800264F78 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
+		670DC0A8190465F800264F78 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRuntime.framework; sourceTree = "<group>"; };
+		670DC0AB190465FE00264F78 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		670DC0AD1904662600264F78 /* HDDatabaseCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDDatabaseCaller.h; sourceTree = "<group>"; };
+		670DC0AE1904662600264F78 /* HDDatabaseCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDDatabaseCaller.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		670DC05F19044CF300264F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670DC06819044CF300264F78 /* CoreGraphics.framework in Frameworks */,
+				670DC06A19044CF300264F78 /* UIKit.framework in Frameworks */,
+				670DC0AC190465FE00264F78 /* AWSS3.framework in Frameworks */,
+				670DC0A9190465F800264F78 /* AWSDynamoDB.framework in Frameworks */,
+				670DC0AA190465F800264F78 /* AWSRuntime.framework in Frameworks */,
+				670DC06619044CF300264F78 /* Foundation.framework in Frameworks */,
+				D0B9DB8F5DFA48D8ABEC2840 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670DC07A19044CF400264F78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670DC07F19044CF400264F78 /* XCTest.framework in Frameworks */,
+				670DC08119044CF400264F78 /* UIKit.framework in Frameworks */,
+				670DC08019044CF400264F78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		670DC05919044CF300264F78 = {
+			isa = PBXGroup;
+			children = (
+				670DC06B19044CF300264F78 /* HomeData */,
+				670DC08419044CF400264F78 /* HomeDataTests */,
+				670DC06419044CF300264F78 /* Frameworks */,
+				670DC06319044CF300264F78 /* Products */,
+				559A5D582A554692A8AC998D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		670DC06319044CF300264F78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				670DC06219044CF300264F78 /* HomeData.app */,
+				670DC07D19044CF400264F78 /* HomeDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		670DC06419044CF300264F78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				670DC0AB190465FE00264F78 /* AWSS3.framework */,
+				670DC0A7190465F800264F78 /* AWSDynamoDB.framework */,
+				670DC0A8190465F800264F78 /* AWSRuntime.framework */,
+				670DC06519044CF300264F78 /* Foundation.framework */,
+				670DC06719044CF300264F78 /* CoreGraphics.framework */,
+				670DC06919044CF300264F78 /* UIKit.framework */,
+				670DC07E19044CF400264F78 /* XCTest.framework */,
+				25BBBA2795CD4D29919D9E4E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		670DC06B19044CF300264F78 /* HomeData */ = {
+			isa = PBXGroup;
+			children = (
+				670DC09919045FB200264F78 /* Constants.h */,
+				670DC09A19045FB200264F78 /* Constants.m */,
+				670DC0AD1904662600264F78 /* HDDatabaseCaller.h */,
+				670DC0AE1904662600264F78 /* HDDatabaseCaller.m */,
+				670DC07419044CF300264F78 /* HDAppDelegate.h */,
+				670DC07519044CF300264F78 /* HDAppDelegate.m */,
+				670DC09419045EED00264F78 /* HDHomeViewController.h */,
+				670DC09519045EED00264F78 /* HDHomeViewController.m */,
+				670DC09619045EED00264F78 /* HDHomeViewController.xib */,
+				670DC07719044CF300264F78 /* Images.xcassets */,
+				670DC06C19044CF300264F78 /* Supporting Files */,
+			);
+			path = HomeData;
+			sourceTree = "<group>";
+		};
+		670DC06C19044CF300264F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				670DC06D19044CF300264F78 /* HomeData-Info.plist */,
+				670DC06E19044CF300264F78 /* InfoPlist.strings */,
+				670DC07119044CF300264F78 /* main.m */,
+				670DC07319044CF300264F78 /* HomeData-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		670DC08419044CF400264F78 /* HomeDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				670DC08A19044CF400264F78 /* HomeDataTests.m */,
+				670DC08519044CF400264F78 /* Supporting Files */,
+			);
+			path = HomeDataTests;
+			sourceTree = "<group>";
+		};
+		670DC08519044CF400264F78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				670DC08619044CF400264F78 /* HomeDataTests-Info.plist */,
+				670DC08719044CF400264F78 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		670DC06119044CF300264F78 /* HomeData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670DC08E19044CF400264F78 /* Build configuration list for PBXNativeTarget "HomeData" */;
+			buildPhases = (
+				DEDCF834C06047CF9F2EF62B /* Check Pods Manifest.lock */,
+				670DC05E19044CF300264F78 /* Sources */,
+				670DC05F19044CF300264F78 /* Frameworks */,
+				670DC06019044CF300264F78 /* Resources */,
+				31CBD710D3B74F4B86667E41 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomeData;
+			productName = HomeData;
+			productReference = 670DC06219044CF300264F78 /* HomeData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		670DC07C19044CF400264F78 /* HomeDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670DC09119044CF400264F78 /* Build configuration list for PBXNativeTarget "HomeDataTests" */;
+			buildPhases = (
+				670DC07919044CF400264F78 /* Sources */,
+				670DC07A19044CF400264F78 /* Frameworks */,
+				670DC07B19044CF400264F78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				670DC08319044CF400264F78 /* PBXTargetDependency */,
+			);
+			name = HomeDataTests;
+			productName = HomeDataTests;
+			productReference = 670DC07D19044CF400264F78 /* HomeDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		670DC05A19044CF300264F78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rupert Deese";
+				TargetAttributes = {
+					670DC07C19044CF400264F78 = {
+						TestTargetID = 670DC06119044CF300264F78;
+					};
+				};
+			};
+			buildConfigurationList = 670DC05D19044CF300264F78 /* Build configuration list for PBXProject "HomeData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 670DC05919044CF300264F78;
+			productRefGroup = 670DC06319044CF300264F78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				670DC06119044CF300264F78 /* HomeData */,
+				670DC07C19044CF400264F78 /* HomeDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		670DC06019044CF300264F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670DC07019044CF300264F78 /* InfoPlist.strings in Resources */,
+				670DC09819045EED00264F78 /* HDHomeViewController.xib in Resources */,
+				670DC07819044CF300264F78 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670DC07B19044CF400264F78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670DC08919044CF400264F78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31CBD710D3B74F4B86667E41 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEDCF834C06047CF9F2EF62B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		670DC05E19044CF300264F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670DC09719045EED00264F78 /* HDHomeViewController.m in Sources */,
+				670DC07619044CF300264F78 /* HDAppDelegate.m in Sources */,
+				670DC07219044CF300264F78 /* main.m in Sources */,
+				670DC09B19045FB200264F78 /* Constants.m in Sources */,
+				670DC0AF1904662600264F78 /* HDDatabaseCaller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670DC07919044CF400264F78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670DC08B19044CF400264F78 /* HomeDataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		670DC08319044CF400264F78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 670DC06119044CF300264F78 /* HomeData */;
+			targetProxy = 670DC08219044CF400264F78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		670DC06E19044CF300264F78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670DC06F19044CF300264F78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		670DC08719044CF400264F78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670DC08819044CF400264F78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		670DC08C19044CF400264F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		670DC08D19044CF400264F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		670DC08F19044CF400264F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559A5D582A554692A8AC998D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeData/HomeData-Prefix.pch";
+				INFOPLIST_FILE = "HomeData/HomeData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		670DC09019044CF400264F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559A5D582A554692A8AC998D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeData/HomeData-Prefix.pch";
+				INFOPLIST_FILE = "HomeData/HomeData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		670DC09219044CF400264F78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HomeData.app/HomeData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeData/HomeData-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HomeDataTests/HomeDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		670DC09319044CF400264F78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HomeData.app/HomeData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomeData/HomeData-Prefix.pch";
+				INFOPLIST_FILE = "HomeDataTests/HomeDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		670DC05D19044CF300264F78 /* Build configuration list for PBXProject "HomeData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670DC08C19044CF400264F78 /* Debug */,
+				670DC08D19044CF400264F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670DC08E19044CF400264F78 /* Build configuration list for PBXNativeTarget "HomeData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670DC08F19044CF400264F78 /* Debug */,
+				670DC09019044CF400264F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670DC09119044CF400264F78 /* Build configuration list for PBXNativeTarget "HomeDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670DC09219044CF400264F78 /* Debug */,
+				670DC09319044CF400264F78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 670DC05A19044CF300264F78 /* Project object */;
+}
