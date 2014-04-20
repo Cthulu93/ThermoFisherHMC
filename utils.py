@@ -16,18 +16,18 @@ def calcHeatIndex(temp, hum):
                 c6*(hum**2) + c7*(temp**2)*hum + c8*temp*(hum**2) + c9*(temp**2)*(hum**2)
     return heatIndex
 
-def simpleDataPlot(time, data, color='b'):
+def simpleDataPlot(time, data, color='b', filename='lastFig.png'):
     timeArray = np.array(time)
     datArray = np.array(data)
     plt.plot(timeArray, datArray, color)
     #plt.show()
-    plt.savefig('lastFig.png', dpi=300)
+    plt.savefig(filename, dpi=300)
 
-def plotTempHumLight(time, temp, hum, light):
+def plotTempHumLight(time, temp, hum, light, filename = 'lastFig.png'):
     timeArray = np.array(time)
     tempArray = np.array(temp)
     humArray = np.array(hum)
     lightArray = np.array(light)
     plt.plot(timeArray, tempArray, 'r', timeArray, humArray, 'g',
              timeArray, lightArray, 'b')
-    plt.savefig('lastFig.png', dpi=300)
+    plt.savefig(filename, dpi=300)
